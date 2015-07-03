@@ -1,0 +1,23 @@
+Format:
+
+	box
+		<component-name> | <component-configuration-file>
+		<dom-element-name> | <component-name> | <template-file-path>
+		<property-name> = <property-value>[, <event-name>, ...]
+		...
+		event=<event-name>[, <event-name>, ...]
+		[<extension-attribute-name>
+		...]
+
+Example:
+	
+	box 
+		text-input 
+		input 
+		name="firstName" 
+		type="text"
+		placeholder="Enter your first name"
+		title="Enter your first name"
+		value="", change
+		event=click, key-press
+		text-input-controller 
